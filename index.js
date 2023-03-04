@@ -3,15 +3,15 @@ const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 
-const connectDB = require('../config/db');
-const productRoutes = require('../routes/productRoutes');
-const userRoutes = require('../routes/userRoutes');
-const adminRoutes = require('../routes/adminRoutes');
-const orderRoutes = require('../routes/orderRoutes');
-const userOrderRoutes = require('../routes/userOrderRoutes');
-const categoryRoutes = require('../routes/categoryRoutes');
-const couponRoutes = require('../routes/couponRoutes');
-const { isAuth, isAdmin } = require('../config/auth');
+const connectDB = require('./config/db');
+const productRoutes = require('./routes/productRoutes');
+const userRoutes = require('./routes/userRoutes');
+const adminRoutes = require('./routes/adminRoutes');
+const orderRoutes = require('./routes/orderRoutes');
+const userOrderRoutes = require('./routes/userOrderRoutes');
+const categoryRoutes = require('./routes/categoryRoutes');
+const couponRoutes = require('./routes/couponRoutes');
+const { isAuth, isAdmin } = require('./config/auth');
 
 connectDB();
 const app = express();
